@@ -354,6 +354,8 @@ struct bq2597x {
 
 extern void set_bq2597x_load_flag(bool bqflag);
 
+static bool parallel_mode_wa = false;
+
 /************************************************************************/
 static int __bq2597x_read_byte(struct bq2597x *bq, u8 reg, u8 *data)
 {
